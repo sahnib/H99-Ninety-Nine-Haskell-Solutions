@@ -6,6 +6,7 @@ module Prob1To10
   totalElem,
   reverseList,
   isAPalindrome,
+  NestedList,
   flatten,
   eliminate,
   pack,
@@ -17,7 +18,7 @@ module Prob1To10
 lastElem :: [a] -> a
 lastElem [] = error "empty list"
 lastElem [x] = x
-lastElem (x:xs) = last xs
+lastElem (_:xs) = last xs
 
 -- Problem 2: Find the last but one element of a list.
 
